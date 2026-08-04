@@ -11,6 +11,7 @@ resource "aws_instance" "web" {
   key_name                    = var.key_name
   subnet_id                   = var.subnet_id
   associate_public_ip_address = true
+  iam_instance_profile        = var.iam_instance_profile
 
   tags = {
     Name        = "${var.project_name}-first-instance"

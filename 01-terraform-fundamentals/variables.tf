@@ -33,3 +33,9 @@ variable "aws_profile" {
   type        = string
   default     = "sarowar-ostad"
 }
+
+variable "iam_instance_profile" {
+  description = "Name of the existing IAM instance profile to attach (SSM access)"
+  type        = string
+  default     = "SSM"
+}
